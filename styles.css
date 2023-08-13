@@ -61,3 +61,11 @@ footer {
     cursor: pointer;
     display: none;
 }
+/* Column styling */
+.column {
+    width: 30%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
