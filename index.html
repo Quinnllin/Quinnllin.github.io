@@ -11,38 +11,38 @@
     <a class="u-visually-hidden" href="#content">Skip to main content</a>
     <header>
         <nav>
-                <a href="mailto:Quinnlin@cmail.carleton.ca">Quinnlin@cmail.carleton.ca</a>
+            <ul>
+                <li><a href="mailto:Quinnlin@cmail.carleton.ca">Contact Quinn</a></li>
+            </ul>
         </nav>
     </header>
 
-    <!-- This is my introduction section -->
     <main id="content">
         <section id="about">
             <h1>Hi there!</h1>
-            <img src="Images/quinn.png" alt="" width="200" height="200">
-            <p>My name is Quinn and I'm a fourth year Psychology student at Carleton University.<br>
-                I'm interested in all things creative and digital; this website showcases the exciting learning projects I've undertaken!</p>
+            <img src="Images/quinn.png" alt="Quinn's Photo" width="200" height="200">
+            <p>My name is Quinn, a fourth-year Psychology student at Carleton University.<br>
+                I'm interested in all things creative and digital; check out the exciting learning projects I've undertaken!</p>
         </section>
     
-        <!-- This is my portfolio section -->
-        <article class="c-card" itemscope itemtype="http://schema.org/Article">
+        <article class="c-card" itemscope itemtype="http://schema.org/CreativeWork">
             <a href="Animation.html" itemprop="url">
                 <figure itemscope itemtype="http://schema.org/ImageObject">
-                    <img src="Images/quinn.png" alt="" loading="lazy">
+                    <img src="Images/quinn.png" alt="Animation Project" loading="lazy">
                 </figure>
                 <header>
                     <h3 itemprop="name">Investigation into Animation</h3>
-                    <p itemprop="description">Exploration into animation using Adobe Illustrator, AfterEffects and Premiere Pro.</p>
+                    <p itemprop="description">Discover my animation journey using Adobe tools.</p>
                 </header>
             </a>
         </article>
         <section class="u-block u-block--grey">
-            <h2>Base example</h2>
+            <h2>Portfolio</h2>
             <div class="b-cardgrid u-grid u-grid--3">
                 <div class="c-card">
                     <a href="Animation.html" itemprop="url">
                         <figure itemscope itemtype="http://schema.org/ImageObject">
-                            <img src="Images/quinn.png" alt="" loading="lazy">
+                            <img src="Images/quinn.png" alt="Card 1 Image" loading="lazy">
                         </figure>
                         <header>
                             <h3 itemprop="name">Card 1 Title</h3>
@@ -51,9 +51,9 @@
                     </a>
                 </div>
                 <div class="c-card">
-                    <a href="URL_TO_CARD2" itemprop="url">
+                    <a href="Animation.html" itemprop="url">
                         <figure itemscope itemtype="http://schema.org/ImageObject">
-                            <img src="Images/quinn.png" alt="" loading="lazy">
+                            <img src="Images/quinn.png" alt="Card 2 Image" loading="lazy">
                         </figure>
                         <header>
                             <h3 itemprop="name">Card 2 Title</h3>
@@ -63,7 +63,7 @@
                 </div>
                 <!-- Repeat this structure for each card -->
             </div>
-</section>
+        </section>
     </main>
     
     <footer>
@@ -102,9 +102,6 @@
         scrollButton.addEventListener('click', () => {
             smoothScroll('html', 1000); // Scroll the entire page to top
         });
-
     </script>
-    <button class="scroll-to-top">Scroll to Top</button>
-    script src="https://cu-rds.s3.amazonaws.com/rds/0.22.0/core.js.gz" crossorigin="anonymous">
 </body>
 </html>
