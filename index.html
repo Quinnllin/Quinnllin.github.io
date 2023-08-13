@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cu-rds.s3.amazonaws.com/rds/0.22.0/core.css.gz" media="print" onload="this.media='all'">
     <title>Quinn Lin</title>
 </head>
 <body>
+    <a class="u-visually-hidden" href="#content">Skip to main content</a>
     <header>
         <nav>
             <ul>
@@ -16,23 +18,25 @@
     </header>
 
     <!-- This is my introduction section -->
-    <section id="about">
-        <h1>Hi there!</h1>
-        <img src="Images/quinn.png" alt="" width="200" height="200">
-        <p>My name is Quinn and I'm a fourth year Psychology student at Carleton University.<br>
-            I'm interested in all things creative and digital; this website showcases the exciting learning projects I've undertaken!</p>
-    </section>
-
-    <!-- This is my portfolio section -->
-    <section id="portfolio">
-        <div class="project">
+    <main id="content">
+        <section id="about">
+            <h1>Hi there!</h1>
+            <img src="Images/quinn.png" alt="" width="200" height="200">
+            <p>My name is Quinn and I'm a fourth year Psychology student at Carleton University.<br>
+                I'm interested in all things creative and digital; this website showcases the exciting learning projects I've undertaken!</p>
+        </section>
+    
+        <!-- This is my portfolio section -->
+        <section class="u-block u-block--grey">
             <h2>My Projects</h2>
-            <ul class="page-list">
-              <li><a href="Animation.html">Investigation into Animation</a></li>
-            </ul>
-        </div>
-    </section>
-
+            <div class="b-cardgrid u-grid u-grid--3">
+                {%include "card/data/card--base"%}
+                {%include "card/data/card--base"%}
+                {%include "card/data/card--base"%}
+            </div>
+        </section>
+    </main>
+    
     <footer>
         <p>&copy; 2023 Quinn Lin. All rights reserved.</p>
     </footer>
@@ -72,5 +76,6 @@
 
     </script>
     <button class="scroll-to-top">Scroll to Top</button>
+    script src="https://cu-rds.s3.amazonaws.com/rds/0.22.0/core.js.gz" crossorigin="anonymous">
 </body>
 </html>
