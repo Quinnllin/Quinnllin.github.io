@@ -68,4 +68,28 @@ footer {
     padding: 10px;
     box-sizing: border-box;
 }
+/* Listing Cards */
+.page-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-list li {
+  margin-bottom: 10px;
+}
+
+.page-list li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.page-list li a:hover {
+  color: #007bff; /* Change to desired hover color */
+}
+
+.page-list li a.active {
+  font-weight: bold;
+}
 
