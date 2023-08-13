@@ -10,7 +10,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="mailto:"Quinnlin@cmail.carleton.com"Quinnlin@cmail.carleton.ca</a></li>
+                <a href="mailto:Quinnlin@cmail.carleton.ca">Quinnlin@cmail.carleton.ca</a>
             </ul>
         </nav>
     </header>
@@ -31,6 +31,7 @@
               <li><a href="Animation.html">Investigation into Animation</a></li>
             </ul>
         </div>
+    </section>
 
     <footer>
         <p>&copy; 2023 Quinn Lin. All rights reserved.</p>
@@ -66,8 +67,9 @@
         const scrollButton = document.querySelector('.scroll-to-top');
     
         scrollButton.addEventListener('click', () => {
-            smoothScroll('body', 1000);
+            smoothScroll('html', 1000); // Scroll the entire page to top
         });
+
     </script>
     <button class="scroll-to-top">Scroll to Top</button>
 </body>
