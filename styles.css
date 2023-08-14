@@ -1,3 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Adjust this to your desired height */
+    overflow: hidden; /* Prevent vertical scrollbar on the body */
+}
+
+.column {
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%;
+    overflow-y: auto; /* Enable scrolling if content exceeds column height */
+}
+
+.fixed {
+    background-color: #f0f0f0;
+    width: 30%; /* Adjust this to your desired width */
+}
+
+.scrollable {
+    background-color: #ffffff;
+    flex: 1; /* Take up the remaining space */
+}
 /* Reset some default styles */
 body, h1, h2, p {
     margin: 0;
