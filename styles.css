@@ -1,38 +1,36 @@
+/* Reset and basic styling */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
+/* Container and column layout */
 .container {
     display: flex;
-    height: 100vh; /* Adjust this to your desired height */
-    overflow: hidden; /* Prevent vertical scrollbar on the body */
+    height: 100vh;
+    overflow: hidden;
 }
 
 .column {
     padding: 20px;
     box-sizing: border-box;
     height: 100%;
-    overflow-y: auto; /* Enable scrolling if content exceeds column height */
+    overflow-y: auto;
 }
 
 .fixed {
     background-color: #f0f0f0;
-    width: 30%; /* Adjust this to your desired width */
+    width: 30%;
 }
 
 .scrollable {
     background-color: #ffffff;
-    flex: 1; /* Take up the remaining space */
+    flex: 1;
 }
 
-/* Basic styling */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
+/* Project styling */
 .project {
     margin-bottom: 2rem;
 }
@@ -41,12 +39,14 @@ body {
     max-width: 100%;
 }
 
+/* Footer styling */
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #333;
     color: #fff;
 }
+
 /* Scroll to top button */
 .scroll-to-top {
     position: fixed;
@@ -59,35 +59,28 @@ footer {
     cursor: pointer;
     display: none;
 }
-/* Column styling */
-.column {
-    width: 30%;
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-}
-/* Listing Cards */
+
+/* Listing Cards styling */
 .page-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .page-list li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .page-list li a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
 }
 
 .page-list li a:hover {
-  color: #007bff; /* Change to desired hover color */
+    color: #007bff;
 }
 
 .page-list li a.active {
-  font-weight: bold;
+    font-weight: bold;
 }
-
