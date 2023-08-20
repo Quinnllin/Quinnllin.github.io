@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Instagram Pilot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cu-rds.s3.amazonaws.com/rds/0.22.0/core.css.gz" media="print" onload="this.media='all'">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Quinn Lin</title>
 </head>
 <body>
-    <nav id="table-of-contents">
+     <nav id="table-of-contents">
         <h2>Table of Contents</h2>
         <ul>
             <li><a href="#section1">Objectives</a></li>
@@ -72,6 +75,45 @@
             <li>Make sure content is aligned with your organizational mission, and values. Don’t be afraid to seek feedback from your team members.</li>
         </ul>
     </section>
+
+
+    <script>
+        // Smooth scrolling function
+        function smoothScroll(target, duration) {
+            const targetElement = document.querySelector(target);
+            if (!targetElement) return; // Handle if the target element is not found
+            const targetPosition = targetElement.getBoundingClientRect().top;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            let startTime = null;
+
+            function animation(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                const timeElapsed = currentTime - startTime;
+                const ease = easeInOutQuad(timeElapsed, startPosition, distance, duration);
+                window.scrollTo(0, ease);
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+
+            function easeInOutQuad(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t + b;
+                t--;
+                return -c / 2 * (t * (t - 2) - 1) + b;
+            }
+
+            requestAnimationFrame(animation);
+        }
+
+        // Scroll to top button
+        const scrollButton = document.querySelector('.scroll-to-top');
+
+        if (scrollButton) {
+            scrollButton.addEventListener('click', () => {
+                smoothScroll('html', 1000); // Scroll the entire page to top
+            });
+        }
+    </script>
 </body>
 </html>
-
+   
