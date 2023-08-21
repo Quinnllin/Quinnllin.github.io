@@ -111,3 +111,11 @@ footer {
     text-decoration: none;
     color: #333;
 }
+
+/* Background */
+body {
+    background-image: url('moon.jpg');
+    background-size: cover; /* or 'contain' or other options */
+    /* Other background properties like background-repeat, background-position */
+}
+
