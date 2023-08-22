@@ -119,3 +119,18 @@ body {
     /* Other background properties like background-repeat, background-position */
 }
 
+/* Wallpaper*?
+/* styles.css */
+
+.wallpaper {
+    background-image: url('images/moon.jpg'); /* Replace with your image path */
+    background-size: cover; /* Adjust image size */
+    background-position: center; /* Adjust image position */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    min-height: 100vh; /* Set minimum height to ensure background covers the whole viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Set text color for contrast */
+}
