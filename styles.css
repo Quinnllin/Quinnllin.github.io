@@ -23,12 +23,12 @@ body {
 }
 
 .fixed {
-    background-color: #f0f0f0;
+    background-color: darkgreen;
     width: 30%;
 }
 
 .scrollable {
-    background-color: #ffffff;
+    background-color: lightgreen;
     flex: 1;
 }
 
