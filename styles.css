@@ -1,6 +1,6 @@
 /* Reset and basic styling */
 body {
-    background-color: #588157; 
+    background-color: #lightgreen; 
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -9,6 +9,7 @@ body {
 
 /* Container and column layout */
 .container {
+    background-color: darkgreen;
     display: flex;
     height: 150vh;
     overflow: hidden;
