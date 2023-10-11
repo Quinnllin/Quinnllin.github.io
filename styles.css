@@ -9,7 +9,7 @@ body {
 
 /* Container and column layout */
 .container {
-    background-color: darkgreen;
+    background-color: #eea891;
     display: flex;
     height: 150vh;
     overflow: hidden;
@@ -23,7 +23,7 @@ body {
 }
 
 .fixed {
-    background-color: darkgreen;
+    background-color: #b13c12;
     width: 30%;
 }
 
